@@ -46,7 +46,7 @@ Access seven critical cultivation stages through an intuitive icon-based grid:
 
 ## 📂 Project Structure
 
-```text
+
 com.example.mode_goviya
 │
 ├── data
