@@ -72,8 +72,11 @@ Current Support: 🇱🇰 Sinhala (Primary)
 
 Planned Updates:
 🌐 Multilingual: Adding Tamil and English support.
+
 🔊 Text-To-Speech: Audio guidance for better accessibility.
+
 📅 Smart Reminders: Push notifications for fertilization and irrigation windows.
+
 🤖 AI Insights: Crop disease detection and AI-based recommendations.🌦 Weather: Real-time local weather integration.
 
 👨‍💻 Developed BySadeepa PiyumalFinal Year UndergraduateSri Lanka Institute of Information Technology (SLIIT)Specialization: Interactive Media
