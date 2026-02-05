@@ -1,173 +1,66 @@
-🌾 Mode Goviya – Paddy Cultivation Assistant
+# 🌾 Mode Goviya – Paddy Cultivation Assistant
 
-Mode Goviya is an Android mobile application developed to support Sri Lankan farmers by providing scientifically recommended paddy cultivation guidance based on district and rice variety selection.
+**Mode Goviya** is an Android mobile application designed to empower Sri Lankan farmers with scientifically backed paddy cultivation guidance. By selecting their specific district and rice variety, users receive a tailored, step-by-step roadmap for a successful harvest.
 
-The application delivers step-by-step farming instructions including soil preparation, fertilization, pest control, irrigation scheduling, harvesting guidance, and storage recommendations.
+The application bridges the gap between traditional knowledge and modern agricultural science, delivering localized instructions for every stage of the farming lifecycle.
 
-📱 Features
-🧭 Onboarding
+---
 
-Sinhala language onboarding experience
+## 📱 Features
 
-User-friendly introduction to application usage
+### 🧭 Onboarding
+* **Sinhala Language First:** A localized onboarding experience designed for ease of use.
+* **Smart Detection:** Uses `SharedPreferences` to detect first-launch and guide new users.
 
-First-launch detection using Shared Preferences
+### 📍 Personalized Selection
+* **District-Based Logic:** Dropdown selection for Sri Lankan districts to provide region-specific advice.
+* **Variety Filtering:** Support for various paddy varieties with filtered cultivation schedules.
 
-📍 District Selection
+### 🏠 Interactive Dashboard
+Access seven critical cultivation stages through an intuitive icon-based grid:
+1. **බිම් සැකසීම** (Soil Preparation)
+2. **බීජ වැපිරීම** (Seed Planting)
+3. **පොහොර යෙදීම** (Fertilizing)
+4. **පලිබෝධ පාලනය** (Pest Control)
+5. **ජලය යෙදීම** (Irrigation)
+6. **අස්වනු නෙලීම** (Harvesting)
+7. **අස්වනු ගබඩා කිරීම** (Storage)
 
-Dropdown selection of Sri Lankan districts
+### 📚 Data & Offline Support
+* **Structured Guidance:** District + variety-based filtering for precise recommendations.
+* **Offline Access:** All core cultivation content is stored locally for use in areas with poor connectivity.
 
-Stored locally for personalized recommendations
+---
 
-🌱 Paddy Variety Selection
+## 🛠️ Technologies Used
 
-Farmers can select paddy varieties
+- **Language:** Kotlin
+- **UI Framework:** Jetpack Compose
+- **Architecture:** MVVM (Model-View-ViewModel)
+- **Database:** Room Persistence Library
+- **Navigation:** Navigation Compose
+- **State Management:** ViewModel + StateFlow
+- **UI Design:** Material 3
 
-Data stored and used to filter cultivation instructions
+---
 
-🏠 Home Dashboard
+## 📂 Project Structure
 
-Seven cultivation sections with visual icons:
-
-බිම් සැකසීම (Soil Preparation)
-
-බීජ වැපිරීම (Seed Planting)
-
-පොහොර යෙදීම (Fertilizing)
-
-පලිබෝධ පාලනය (Pest Control)
-
-ජලය යෙදීම (Irrigation)
-
-අස්වනු නෙලීම (Harvesting)
-
-අස්වනු ගබඩා කිරීම (Storage)
-
-📚 Cultivation Guidance
-
-District + variety based filtering
-
-Offline content support
-
-Structured agricultural recommendations
-
-💾 Local Database
-
-Room database integration
-
-Stores:
-
-Districts
-
-Paddy varieties
-
-Cultivation instructions
-
-🛠️ Technologies Used
-
-Language: Kotlin
-
-UI Framework: Jetpack Compose
-
-Architecture: MVVM (Model View ViewModel)
-
-Database: Room Persistence Library
-
-Navigation: Navigation Compose
-
-State Management: ViewModel + StateFlow
-
-Data Storage: SharedPreferences
-
-Design: Material 3
-
-📂 Project Structure
+```text
 com.example.mode_goviya
 │
 ├── data
-│   ├── entity
-│   ├── dao
-│   ├── database
-│   └── repository
+│   ├── entity      # Room Database Entities
+│   ├── dao         # Data Access Objects
+│   ├── database    # Room Database Configuration
+│   └── repository  # Single source of truth for data
 │
 ├── ui
-│   ├── screens
-│   └── viewmodel
+│   ├── screens     # Compose UI Screen functions
+│   └── viewmodel   # Logic and State handling
 │
-├── util
-│   └── Prefs.kt
+├── util            # Helper classes (e.g., Prefs.kt)
 │
-└── navigation
-⚙️ Installation Guide
-✅ Requirements
-
-Android Studio Hedgehog or later
-
-Android SDK 34+
-
-Kotlin 1.9+
-
-Gradle 8+
-
-🚀 Steps to Run
-
-Clone repository
-
-git clone https://github.com/YOUR_USERNAME/mode-goviya.git
-
-Open project in Android Studio
-
-Sync Gradle
-
-Run on Emulator or Physical Device
-
-🗄️ Database Schema
-District Table
-Field	Type
-id	Int
-name	String
-Paddy Variety Table
-Field	Type
-id	Int
-name	String
-districtId	Int
-🎯 Target Users
-
-Paddy farmers in Sri Lanka
-
-Agricultural extension officers
-
-Farming students and researchers
-
-🌍 Localization
-
-Primary Language: Sinhala
-
-Future support planned for:
-
-Tamil
-
-English
-
-🔮 Future Improvements
-
-🔊 Text-To-Speech farming guidance
-
-☁️ Cloud database synchronization
-
-📅 Smart cultivation reminders
-
-🤖 AI-based crop recommendations
-
-🌦 Weather integration
-
-👨‍💻 Developed By
-
-Sadeepa Piyumal
-Final Year Undergraduate
-Sri Lanka Institute of Information Technology (SLIIT)
-Specialization: Interactive Media & Game Development
-
-📄 License
-
-This project is developed for academic and research purposes.
+└── navigation      # Navigation graph and destinations
+⚙️ Installation Guide✅ RequirementsAndroid Studio Hedgehog (2023.1.1) or laterAndroid SDK 34+Kotlin 1.9+Gradle 8+🚀 Steps to RunClone the repositoryBashgit clone [https://github.com/YOUR_USERNAME/mode-goviya.git](https://github.com/YOUR_USERNAME/mode-goviya.git)
+Open the project in Android Studio.Sync Gradle and wait for dependencies to download.Run on a physical device or emulator.🗄️ Database SchemaTableFieldsDistrictid: Int, name: StringPaddy Varietyid: Int, name: String, districtId: Int🌍 Localization & Future RoadmapCurrent Support: 🇱🇰 Sinhala (Primary)Planned Updates:🌐 Multilingual: Adding Tamil and English support.🔊 Text-To-Speech: Audio guidance for better accessibility.📅 Smart Reminders: Push notifications for fertilization and irrigation windows.🤖 AI Insights: Crop disease detection and AI-based recommendations.🌦 Weather: Real-time local weather integration.👨‍💻 Developed BySadeepa PiyumalFinal Year UndergraduateSri Lanka Institute of Information Technology (SLIIT)Specialization: Interactive Media📄 LicenseThis project is developed for academic and research purposes.
