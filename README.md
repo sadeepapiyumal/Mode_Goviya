@@ -62,5 +62,16 @@ com.example.mode_goviya
 ├── util            # Helper classes (e.g., Prefs.kt)
 │
 └── navigation      # Navigation graph and destinations
-⚙️ Installation Guide✅ RequirementsAndroid Studio Hedgehog (2023.1.1) or laterAndroid SDK 34+Kotlin 1.9+Gradle 8+🚀 Steps to RunClone the repositoryBashgit clone [https://github.com/YOUR_USERNAME/mode-goviya.git](https://github.com/YOUR_USERNAME/mode-goviya.git)
-Open the project in Android Studio.Sync Gradle and wait for dependencies to download.Run on a physical device or emulator.🗄️ Database SchemaTableFieldsDistrictid: Int, name: StringPaddy Varietyid: Int, name: String, districtId: Int🌍 Localization & Future RoadmapCurrent Support: 🇱🇰 Sinhala (Primary)Planned Updates:🌐 Multilingual: Adding Tamil and English support.🔊 Text-To-Speech: Audio guidance for better accessibility.📅 Smart Reminders: Push notifications for fertilization and irrigation windows.🤖 AI Insights: Crop disease detection and AI-based recommendations.🌦 Weather: Real-time local weather integration.👨‍💻 Developed BySadeepa PiyumalFinal Year UndergraduateSri Lanka Institute of Information Technology (SLIIT)Specialization: Interactive Media📄 LicenseThis project is developed for academic and research purposes.
+
+🗄️ Database SchemaTableFieldsDistrictid: Int, name: StringPaddy Varietyid: Int, name: String, districtId: Int
+🌍 Localization & Future Roadmap
+Current Support: 🇱🇰 Sinhala (Primary)
+Planned Updates:
+🌐 Multilingual: Adding Tamil and English support.
+🔊 Text-To-Speech: Audio guidance for better accessibility.
+📅 Smart Reminders: Push notifications for fertilization and irrigation windows.
+🤖 AI Insights: Crop disease detection and AI-based recommendations.🌦 Weather: Real-time local weather integration.
+
+👨‍💻 Developed BySadeepa PiyumalFinal Year UndergraduateSri Lanka Institute of Information Technology (SLIIT)Specialization: Interactive Media
+
+📄 License :This project is developed for academic and research purposes.
