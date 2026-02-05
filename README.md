@@ -46,7 +46,7 @@ Access seven critical cultivation stages through an intuitive icon-based grid:
 
 ## 📂 Project Structure
 
-
+```text
 com.example.mode_goviya
 │
 ├── data
@@ -62,6 +62,7 @@ com.example.mode_goviya
 ├── util            # Helper classes (e.g., Prefs.kt)
 │
 └── navigation      # Navigation graph and destinations
+```
 
 🗄️ Database SchemaTableFieldsDistrictid: Int, name: StringPaddy Varietyid: Int, name: String, districtId: Int
 🌍 Localization & Future Roadmap
