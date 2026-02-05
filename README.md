@@ -70,7 +70,9 @@ com.example.mode_goviya
 
 Current Support: 🇱🇰 Sinhala (Primary)
 
+
 Planned Updates:
+
 🌐 Multilingual: Adding Tamil and English support.
 
 🔊 Text-To-Speech: Audio guidance for better accessibility.
